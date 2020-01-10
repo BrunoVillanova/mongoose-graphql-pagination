@@ -122,7 +122,7 @@ class Pagination {
         .limit(1)
         .sort(this.sort.value)
         .collation(this.sort.collation)
-        .comment(this.createComment('hasNextPage'))
+//         .comment(this.createComment('hasNextPage'))
         .countDocuments();
       return Boolean(count);
     };
